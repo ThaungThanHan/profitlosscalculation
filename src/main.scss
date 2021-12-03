@@ -1,0 +1,17 @@
+.main{
+    // border:1px solid red;
+    background: #f9fdfe;
+    outline:none;
+    border-radius:1rem;
+    width:80rem;height:auto;
+    margin-top:2rem;
+    margin:2rem auto;
+    -webkit-box-shadow: 5px 6px 15px -4px #000000; 
+    box-shadow: 5px 6px 15px -4px #000000;
+}
+.datatable{
+  &--rate{
+    height:2rem;margin-top:1rem;padding:.5rem;
+    display:flex;justify-content: space-between;
+  }
+}

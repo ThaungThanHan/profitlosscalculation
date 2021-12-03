@@ -1,0 +1,28 @@
+table.steelBlueCols {
+    border: none;
+    background-color: #f9fdfe;
+    margin-top:1rem;
+    width:80rem;height:40rem;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.steelBlueCols td, table.steelBlueCols th {
+    border: 1px solid #555555;
+    padding: 5px 10px;
+  }
+  table.steelBlueCols tbody td {
+    font-size: 20px;
+    font-weight: bold;
+    border:1px solid #555555;
+    margin-bottom:3rem;
+    color: #414141;
+  }
+  table.steelBlueCols thead {
+    background: #414141;
+  }
+  table.steelBlueCols thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+  }
