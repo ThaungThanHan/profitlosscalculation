@@ -58,11 +58,14 @@ const Main = () => {
                         <button onClick={changeEditMode}>X</button>
                     </div> 
                     :
-                    <div style={{display:"flex",alignItems:"center"}}>
+                    <div>
+                    <div style={{display:"flex",alignItems:"center",marginBottom:"-1rem"}}>
                     <p style={{marginRight:"10px",fontSize: "20px"}}>Exchange Rate -</p>
                     <div style={{fontSize: "20px"}} onDoubleClick={changeEditMode}>
                         {exrateValue}
                     </div>
+                    </div>
+                    <span style={{display:"flex",marginLeft:"5rem"}}>(Double click to edit rate.)</span>
                     </div>
                     }
                 </div>

@@ -18,7 +18,7 @@ const DataTable = ({calc}) => {
     const productCProfit = productCSales - productCCost;
     const totalprofit = productAProfit + productBProfit + productCProfit;
     return (
-        <table class="steelBlueCols">
+        <table style={{marginTop:"3rem"}} class="steelBlueCols">
         <thead>
         <tr>
         <th colspan="3">၀ယ်စျေး</th>
@@ -26,19 +26,19 @@ const DataTable = ({calc}) => {
         </thead>
         <tbody>
         <tr>
-        <td style={{width:"43%"}}>Product A</td>
-        <td>{calc.product1_price}</td>
-        <td>{productACost} MMK </td>
+        <td style={{width:"35%"}}>Product A</td>
+        <td>{calc.product1_price} $</td>
+        <td>( {calc.product1_price}*{calc.exrate} ) {productACost} MMK </td>
         </tr>
         <tr>
         <td>Product B</td>
-        <td>{calc.product2_price}</td>
-        <td>{productBCost} MMK </td>
+        <td>{calc.product2_price} $</td>
+        <td>( {calc.product2_price}*{calc.exrate} ) {productBCost} MMK </td>
         </tr>
         <tr>
         <td>Product C</td>
-        <td>{calc.product3_price}</td>
-        <td>{productCCost} MMK </td>
+        <td>{calc.product3_price} $</td>
+        <td>( {calc.product3_price}*{calc.exrate} ) {productCCost} MMK </td>
         </tr>
         <tr>
         <td>အရင်းပေါင်း</td>
@@ -83,21 +83,21 @@ const DataTable = ({calc}) => {
         <tbody>
         <tr>
             <td>Product A</td>
-            <td></td>
+            <td>({productASales} - {productACost}) MMK</td>
             {productAProfit.toString().includes("-")
             ?<td style={{color:"red"}}>{productAProfit} MMK</td>
             :<td>{productAProfit} MMK</td>}
         </tr>
         <tr>
             <td>Product B</td>
-            <td></td>
+            <td>({productBSales} - {productBCost}) MMK</td>
             {productBProfit.toString().includes("-")
             ?<td style={{color:"red"}}>{productBProfit} MMK</td>
             :<td>{productBProfit} MMK</td>}
         </tr>
         <tr>
             <td>Product C</td>
-            <td></td>
+            <td>({productCSales} - {productCCost}) MMK</td>
             {productCProfit.toString().includes("-")
             ?<td style={{color:"red"}}>{productCProfit} MMK</td>
             :<td>{productCProfit} MMK</td>}
